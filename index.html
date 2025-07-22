@@ -127,6 +127,20 @@
     </div>
   </div>
 </section>
+<script>
+  const testimonials = document.querySelectorAll('.testimonial');
+  let index = 0;
+
+  function showTestimonial() {
+    testimonials.forEach((el, i) => {
+      el.classList.remove('active');
+      if (i === index) el.classList.add('active');
+    });
+    index = (index + 1) % testimonials.length;
+  }
+
+  setInterval(showTestimonial, 4000); // every 4 seconds
+</script>
 
 </body>
 </html>
