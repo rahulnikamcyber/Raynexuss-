@@ -328,4 +328,52 @@ footer a:hover {
 .contact-form .btn-primary:hover {
   background: #007799;
 }
+/* Header Styling for Services */
+.services-hero {
+  background: url('https://img.freepik.com/free-photo/aerial-view-solar-panels-rooftop-generative-ai_188544-12489.jpg') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.services-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.services-hero .hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+/* Services List */
+.services-list {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.styled-list {
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.styled-list li {
+  margin: 10px 0;
+  color: #004466;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
+}
 
