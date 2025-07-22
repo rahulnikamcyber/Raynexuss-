@@ -4,26 +4,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About - Raynexuss</title>
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <h1>About Raynexuss</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Raynexuss</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section about-hero">
+    <div class="hero-text" data-aos="fade-up">
+      <h2>About Raynexuss</h2>
+      <p>Shaping a Greener Future Through Smart Solar Innovation</p>
+    </div>
   </header>
+
+  <!-- About Content -->
   <main>
-    <section>
-      <h2>Who We Are</h2>
-      <p>Raynexuss is a growing solar services company focused on innovation, affordability, and customer trust.</p>
+    <section class="about-section" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title">Who We Are</h2>
+        <p>
+          Raynexuss is a fast-growing solar energy company dedicated to empowering homes and businesses with clean, affordable, and reliable solar solutions. We believe in a sustainable tomorrow — and we build it through trust, innovation, and technology.
+        </p>
+
+        <div class="about-highlights">
+          <div class="highlight-box">
+            <h3>🌞 Vision</h3>
+            <p>To accelerate India’s transition to solar-powered independence.</p>
+          </div>
+          <div class="highlight-box">
+            <h3>🔧 Expertise</h3>
+            <p>Our team combines industry expertise with cutting-edge technology.</p>
+          </div>
+          <div class="highlight-box">
+            <h3>🤝 Trust</h3>
+            <p>We value long-term relationships with clients through transparency and performance.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Raynexuss. All rights reserved.</p>
+    <div class="container">
+      <p>Contact us: <a href="mailto:info@raynexuss.com">info@raynexuss.com</a> |
+        <a href="tel:+919595957535">+91 9595957535</a></p>
+      <p>&copy; 2025 Raynexuss. All rights reserved.</p>
+    </div>
   </footer>
+
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
