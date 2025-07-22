@@ -5,45 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services - Raynexuss</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <h1>Our Services</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h2>What We Offer</h2>
-      <ul>
-        <li>Solar Panel Installation</li>
-        <li>Operation & Maintenance</li>
-        <li>Cleaning Services</li>
-        <li>Solar AMC Contracts</li>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Raynexuss</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="hero-section services-hero">
+    <div class="hero-text" data-aos="fade-up">
+      <h2>Our Services</h2>
+      <p>What We Offer to Empower Your Solar Journey</p>
+    </div>
+  </header>
+
+  <!-- Services List -->
+  <main>
+    <section class="services-list" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title">What We Offer</h2>
+        <ul class="styled-list">
+          <li>✅ Solar Panel Installation</li>
+          <li>✅ Operation & Maintenance</li>
+          <li>✅ Cleaning Services</li>
+          <li>✅ Solar AMC Contracts</li>
+        </ul>
+      </div>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Raynexuss. All rights reserved.</p>
+    <div class="container">
+      <p>© 2025 Raynexuss. All rights reserved.</p>
+    </div>
   </footer>
-  <script>
-  const testimonials = document.querySelectorAll('.testimonial');
-  let index = 0;
 
-  function showTestimonial() {
-    testimonials.forEach((el, i) => {
-      el.classList.remove('active');
-      if (i === index) el.classList.add('active');
-    });
-    index = (index + 1) % testimonials.length;
-  }
-
-  setInterval(showTestimonial, 4000); // every 4 seconds
-</script>
-
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
