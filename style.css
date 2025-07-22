@@ -221,3 +221,59 @@ footer a:hover {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Contact Hero */
+.contact-hero {
+  background: linear-gradient(to right, #004466, #007799);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact-hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #f4f4f4;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.contact-box:hover {
+  transform: translateY(-10px);
+}
+
+.contact-box h3 {
+  color: #004466;
+  margin-bottom: 10px;
+}
+
+.contact-box a {
+  color: #007799;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+/* Reuse social-icons styles from earlier */
