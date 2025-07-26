@@ -442,4 +442,8 @@ footer a:hover {
   color: #333;
 
 }
+.service-card-link {
+  text-decoration: none;
+  color: inherit;
+}
 
