@@ -440,6 +440,21 @@ footer a:hover {
 .highlight-box p {
   font-size: 0.95rem;
   color: #333;
-}
 
 }
+.btn-service {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ffc107;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-service:hover {
+  background-color: #ff9800;
+}
+
