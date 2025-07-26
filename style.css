@@ -1,135 +1,452 @@
-/* Reset some default styles */
+W1nter!cloud#24
+W1nter!Cloud#24
+
+
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: #fdfdfd;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-header {
-  background: linear-gradient(to right, #003366, #006699);
-  padding: 1rem 0;
-  color: white;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2.5rem;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  background: #004d80;
-  padding: 0.5rem 0;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 1rem;
-  padding: 0.5rem;
-  transition: background 0.3s;
-}
-
-nav a:hover {
-  background: #006699;
-  border-radius: 5px;
-}
-
-section {
-  padding: 3rem 1rem;
+.container {
+  width: 90%;
   max-width: 1200px;
   margin: auto;
 }
 
-.hero {
-  background: url('hero-image.jpg') no-repeat center center/cover;
+/* Navigation */
+.navbar {
+  background: #004466;
+  padding: 1rem 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background: #006699;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('https://img.freepik.com/free-photo/solar-energy-panels-rooftop-with-sunlight-generative-ai_188544-12487.jpg') no-repeat center center/cover;
+  height: 30vh; /* 👈 Reduce this to a smaller value like 40vh or 50vh */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   color: white;
-  text-align: center;
-  padding: 6rem 1rem;
-  position: relative;
+  padding: 20px;
 }
 
-.hero h2 {
+.hero-section h2 {
   font-size: 3rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-}
-
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.service {
-  background: #ffffff;
-  padding: 2rem;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.service img {
-  width: 80px;
-  height: auto;
   margin-bottom: 1rem;
 }
 
-.testimonials {
-  background: #f0f8ff;
-  border-left: 6px solid #00aaff;
-  padding: 2rem;
-  margin: 2rem 0;
-  border-radius: 8px;
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-.testimonials p {
-  font-style: italic;
-}
-
-footer {
-  background: #003366;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 3rem;
-}
-
-footer a {
-  color: #66ccff;
+.btn {
+  padding: 10px 20px;
+  background: #ffcc00;
+  color: #000;
   text-decoration: none;
-  margin: 0 0.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* About Section */
+.about {
+  padding: 3rem 0;
+  background: #fff;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #004466;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #004466;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section h2 {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.services-section {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #0056b3;
+}
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
 }
 
-/* Animation on Scroll */
-[data-aos] {
-  opacity: 0;
-  transition-property: transform, opacity;
+.social-icons {
+  margin: 15px 0;
 }
 
-[data-aos].aos-animate {
-  opacity: 1;
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+.testimonial-section {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonial-slider {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.testimonial {
+  display: none;
+  animation: fade 1s ease-in-out;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  color: #004466;
+  margin-top: 0;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Contact Hero */
+.contact-hero {
+  background: linear-gradient(to right, #004466, #007799);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact-hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #f4f4f4;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.contact-box:hover {
+  transform: translateY(-10px);
+}
+
+.contact-box h3 {
+  color: #004466;
+  margin-bottom: 10px;
+}
+
+.contact-box a {
+  color: #007799;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+/* Reuse social-icons styles from earlier */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #004466;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007799;
+  outline: none;
+}
+
+.contact-form .btn-primary {
+  background: #004466;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form .btn-primary:hover {
+  background: #007799;
+}
+/* Header Styling for Services */
+.services-hero {
+  background: url('https://img.freepik.com/free-photo/aerial-view-solar-panels-rooftop-generative-ai_188544-12489.jpg') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.services-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.services-hero .hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+/* Services List */
+.services-list {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.styled-list {
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.styled-list li {
+  margin: 10px 0;
+  color: #004466;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
+  /* About Hero Section */
+.about-hero {
+  background: url('https://img.freepik.com/free-photo/solar-panels-rooftop-sunset_23-2149274213.jpg') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.about-hero .hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+/* About Content */
+.about-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* About Highlights */
+.about-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.highlight-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  width: 280px;
+  text-align: left;
+}
+
+.highlight-box h3 {
+  margin-bottom: 10px;
+  color: #004466;
+  font-size: 1.1rem;
+}
+
+.highlight-box p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
 }
